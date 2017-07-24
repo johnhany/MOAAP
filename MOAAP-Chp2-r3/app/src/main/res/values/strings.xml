@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">第二章 - 深入OpenCV Android应用开发</string>
+    <string name="title_activity_main">第二章 - 深入OpenCV Android应用开发</string>
+    <string name="open_gallery">载入图像</string>
+    <string name="image_view_description">Image View</string>
+    <string name="DoG">Difference of Gaussians</string>
+    <string name="CannyEdges">Canny Edges</string>
+    <string name="SobelFilter">Sobel Filter</string>
+    <string name="HoughLines">Hough Lines</string>
+    <string name="HoughCircles">Hough Circles</string>
+    <string name="Contours">Contours</string>
+    <string name="HarrisCorners">Harris Corners</string>
+</resources>

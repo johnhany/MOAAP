@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/open_gallery" android:title="@string/open_gallery"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/DoG" android:title="@string/DoG"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/CannyEdges" android:title="@string/CannyEdges"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/SobelFilter" android:title="@string/SobelFilter"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/HoughLines" android:title="@string/HoughLines"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/HoughCircles" android:title="@string/HoughCircles"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/Contours" android:title="@string/Contours"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/HarrisCorners" android:title="@string/HarrisCorners"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

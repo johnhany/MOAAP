@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">第一章 - 深入OpenCV Android应用开发</string>
+
+    <string name="action_load_image">载入图像</string>
+</resources>

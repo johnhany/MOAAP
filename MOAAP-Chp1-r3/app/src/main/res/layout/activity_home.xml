@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bMean"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Mean Blur" />
+
+        <Button
+            android:id="@+id/bGaussian"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Gaussian Blur" />
+
+        <Button
+            android:id="@+id/bMedian"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Median Blur" />
+
+        <Button
+            android:id="@+id/bSharpen"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Sharpen Image" />
+
+        <Button
+            android:id="@+id/bDilate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Dilate Image" />
+
+        <Button
+            android:id="@+id/bErode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Erode Image" />
+
+        <Button
+            android:id="@+id/bThreshold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Threshold Image" />
+
+        <Button
+            android:id="@+id/bAdaptiveThreshold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Adaptive Threshold" />
+    </LinearLayout>
+</ScrollView>

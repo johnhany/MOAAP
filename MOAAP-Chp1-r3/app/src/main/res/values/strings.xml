@@ -2,4 +2,13 @@
     <string name="app_name">第一章 - 深入OpenCV Android应用开发</string>
 
     <string name="action_load_image">载入图像</string>
+
+    <string name="menu_mean_blur">Mean Blur</string>
+    <string name="menu_gaussain_blur">Gaussian Blur</string>
+    <string name="menu_median_blur">Median Blur</string>
+    <string name="menu_sharpen_image">Sharpen Image</string>
+    <string name="menu_dilate_image">Dilate Image</string>
+    <string name="menu_erode_image">Erode Image</string>
+    <string name="menu_threshold_image">Threshold Image</string>
+    <string name="menu_adaptive_threshold">Adaptive Threshold</string>
 </resources>

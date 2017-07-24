@@ -12,48 +12,48 @@
             android:id="@+id/bMean"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Mean Blur" />
+            android:text="@string/menu_mean_blur" />
 
         <Button
             android:id="@+id/bGaussian"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Gaussian Blur" />
+            android:text="@string/menu_gaussain_blur" />
 
         <Button
             android:id="@+id/bMedian"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Median Blur" />
+            android:text="@string/menu_median_blur" />
 
         <Button
             android:id="@+id/bSharpen"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Sharpen Image" />
+            android:text="@string/menu_sharpen_image" />
 
         <Button
             android:id="@+id/bDilate"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Dilate Image" />
+            android:text="@string/menu_dilate_image" />
 
         <Button
             android:id="@+id/bErode"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Erode Image" />
+            android:text="@string/menu_erode_image" />
 
         <Button
             android:id="@+id/bThreshold"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Threshold Image" />
+            android:text="@string/menu_threshold_image" />
 
         <Button
             android:id="@+id/bAdaptiveThreshold"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Adaptive Threshold" />
+            android:text="@string/menu_adaptive_threshold" />
     </LinearLayout>
 </ScrollView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">第三章 - 深入OpenCV Android应用开发</string>
+    <string name="action_load_first_image">Load First Image</string>
+    <string name="action_load_second_image">Load Second Image</string>
+    <string name="title_activity_main">第三章 - 深入OpenCV Android应用开发</string>
+    <string name="title_activity_home">第三章 - 深入OpenCV Android应用开发</string>
+    <string name="result_target_1">目标1：%1$d</string>
+    <string name="result_target_2">目标2：%1$d</string>
+    <string name="result_target_matches">关键点匹配：%1$d</string>
+    <string name="result_time_cost">耗费时间：%1$d ms</string>
+</resources>

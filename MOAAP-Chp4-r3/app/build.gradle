@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "26.0.1"
     defaultConfig {
-        applicationId "net.johnhany.moaap_chp2_r3"
+        applicationId "net.johnhany.moaap_chp4_r3"
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 1

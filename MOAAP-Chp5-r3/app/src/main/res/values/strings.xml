@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">第五章 - 深入OpenCV Android应用开发</string>
+    <string name="home_button_1">Image Pyramids</string>
+    <string name="home_button_2">Optical Flow and KLT Tracker</string>
+    <string name="pyramid_img_descrip">Image View</string>
+    <string name="pyramid_button_1">Gaussian Pyramid Up</string>
+    <string name="pyramid_button_2">Gaussian Pyramid Down</string>
+    <string name="pyramid_button_3">Laplacian Pyramid</string>
+    <string name="action_load_first_image">Load Image</string>
+    <string name="title_activity_main">第五章 - 深入OpenCV Android应用开发</string>
+    <string name="title_activity_pyramid">第五章 - 深入OpenCV Android应用开发</string>
+    <string name="title_activity_home">第五章 - 深入OpenCV Android应用开发</string>
+</resources>

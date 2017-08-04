@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
     private Mat mRgba;
     private CascadeClassifier haarCascade;
     static int REQUEST_CAMERA = 0;
-    static boolean read_external_storage_granted = false;
+    static boolean camera_granted = false;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA);
         }else {
             Log.i("permission", "READ_EXTERNAL_STORAGE already granted");
-            read_external_storage_granted = true;
+            camera_granted = true;
         }
 
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.java_surface_view);
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 // permission was granted
                 Log.i("permission", "CAMERA granted");
-                read_external_storage_granted = true;
+                camera_granted = true;
             } else {
                 // permission denied
                 Log.i("permission", "CAMERA denied");

@@ -1,6 +1,11 @@
 package net.johnhany.moaap_chp4_r3;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
     private MenuItem             mItemSwitchCamera = null;
     private Mat mRgba;
     private CascadeClassifier haarCascade;
+    static int REQUEST_CAMERA = 0;
+    static boolean read_external_storage_granted = false;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -43,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS:
                 {
-                    Log.i(TAG, "OpenCV loaded successfully");
+                    Log.i(TAG, "OpenCV成功加载");
                     try{
                         InputStream is = getResources().openRawResource(R.raw.haarcascade_frontalface_alt2);
                         File cascadeDir = getDir("cascade",
@@ -65,14 +72,13 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
                                 mCascadeFile.getAbsolutePath());
                         if (haarCascade.empty())
                         {
-                            Log.i("Cascade Error",
-                                    "级联分类器加载失败");
+                            Log.i("Cascade Error", "级联分类器加载失败");
                             haarCascade = null;
                         }
                     }
                     catch(Exception e)
                     {
-                        Log.i("Cascade Error: ","Cascase not found");
+                        Log.i("Cascade Error: ","找不到级联分类器文件");
                     }
                     mOpenCvCameraView.enableView();
                 } break;
@@ -92,6 +98,15 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 
         setContentView(R.layout.activity_main);
 
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+            Log.i("permission", "request READ_EXTERNAL_STORAGE");
+            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA);
+        }else {
+            Log.i("permission", "READ_EXTERNAL_STORAGE already granted");
+            read_external_storage_granted = true;
+        }
+
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.java_surface_view);
         mOpenCvCameraView.setCvCameraViewListener(this);
 
@@ -102,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         Log.i(TAG, "called onCreateOptionsMenu");
-        mItemSwitchCamera = menu.add("Toggle Front/Back camera");
+        mItemSwitchCamera = menu.add("切换前置/后置摄像头");
         return true;
     }
 
@@ -135,6 +150,21 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
     }
 
     @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
+        if (requestCode == REQUEST_CAMERA) {
+            // If request is cancelled, the result arrays are empty.
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // permission was granted
+                Log.i("permission", "CAMERA granted");
+                read_external_storage_granted = true;
+            } else {
+                // permission denied
+                Log.i("permission", "CAMERA denied");
+            }
+        }
+    }
+
+    @Override
     public void onCameraViewStarted(int width, int height) {
         mRgba = new Mat(height, width, CvType.CV_8UC4);
     }
@@ -146,7 +176,6 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 
     @Override
     public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
-
         //Rotating the input frame
         Mat mGray = inputFrame.gray();
         mRgba = inputFrame.rgba();
@@ -154,7 +183,6 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         {
             Core.flip(mRgba, mRgba, 1);
         }
-
 
         //Detecting face in the frame
         MatOfRect faces = new MatOfRect();

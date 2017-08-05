@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">第六章 - 深入OpenCV Android应用开发</string>
+    <string name="action_load_image">Load Image</string>
+    <string name="title_activity_stitching">第六章 - 深入OpenCV Android应用开发</string>
+    <string name="title_activity_home">第六章 - 深入OpenCV Android应用开发</string>
+</resources>

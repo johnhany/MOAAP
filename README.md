@@ -6,6 +6,7 @@ The book is written by Salil Kapur and Nisarg Thakkar, and translated into Chine
 
 ## Requirements
 
+* JDK 8u141
 * Android Studio 2.3.3
 * Android 7.0 (API 24)
 * Android SDK Tools 26.0.1
@@ -14,6 +15,8 @@ The book is written by Salil Kapur and Nisarg Thakkar, and translated into Chine
 * OpenCV 3.2.0 (including opencv_contrib 3.2.0)
 
 All tests are passed on Windows 10 and Ubuntu 16.04.
+
+For Chp3 and Chp6, configuring native build with CMake in Android Studio is required.
 
 For Chp3, compiling OpenCV Android SDK with opencv_contrib modules is required.
 

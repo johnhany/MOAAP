@@ -18,7 +18,9 @@ All tests are passed on Windows 10 and Ubuntu 16.04.
 
 For Chp3 and Chp6, configuring native build with CMake in Android Studio is required.
 
-For Chp3, compiling OpenCV Android SDK with opencv_contrib modules is required.
+For Chp3, compiling OpenCV Android SDK with opencv_contrib modules on Ubuntu is required.
+
+For Chp7, [MNIST](http://yann.lecun.com/exdb/mnist/) dataset is required. A pre-trained SVM classifier is available [here](http://pan.baidu.com/s/1nuS3M9F). Please copy `train-images.idx3-ubyte`, `train-labels.idx1-ubyte` and `SVM_MNIST.xml` files to root directory of sd-card in your Android device. C++ codes for training and testing SVM and KNN on PC are provided [here](https://gist.github.com/johnhany/ff6835b2191e58f96699645b2d36c1a1) and [here](https://gist.github.com/johnhany/a48487dcacdb4c2108e919b421d19cfb).
 
 ## Projects
 

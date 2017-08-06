@@ -26,8 +26,6 @@ import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.imgproc.Imgproc;
 
-import java.io.InputStream;
-
 import static org.opencv.core.Core.FONT_HERSHEY_SIMPLEX;
 
 public class MainActivity extends AppCompatActivity implements CvCameraViewListener2 {

@@ -20,6 +20,36 @@ For Chp3 and Chp6, configuring native build with CMake in Android Studio is requ
 
 For Chp3, compiling OpenCV Android SDK with opencv_contrib modules is required.
 
+## Projects
+
+* MOAAP-Chp1
+
+  Image filters, including mean blur, Gaussian blur, median blur, dilation, erosion, thresholding and adaptive thresholding.
+
+* MOAAP-Chp2
+
+  Feature detection, including Difference of Gaussian, Canny Edge detector, Sobel operator, Harris Corner detection, Hough line transformation and Hough circle transfermation.
+
+* MOAAP-Chp3
+
+  Object detection and image matching, including SIFT, SURF, ORB, BRISK and FREAK.
+
+* MOAAP-Chp4
+
+  Cascade classifiers for face detection, including Haar and LBP.
+
+* MOAAP-Chp5
+
+  Object tracking, including Optical Flow, Gaussian pyramids, Laplacian pyramids and KLT tracker.
+
+* MOAAP-Chp6
+
+  Image alignment and stitching for panorama image.
+
+* MOAAP-Chp7
+
+  Basic machine learnings for digit recognition, including SVM and KNN.
+
 ## Related Posts
 
 * [在Android Studio上进行OpenCV 3.1开发](http://johnhany.net/2016/01/opencv-3-development-in-android-studio/)
@@ -37,4 +67,4 @@ For Chp3, compiling OpenCV Android SDK with opencv_contrib modules is required.
 
 The MOAAP updated codes are released under the MIT license.
 
-Copyrights of English edition of MOAAP book including the original source codes belong to Packt Publishing. Copyrights of the Chinese edition belong to Publishing House of Electronics Industry. As translator for the Chinese edition, under the contract with Publishin House of Electronics Industry, I do not own the copyrights of any material in the Chinese edition. But I do believe I'm entitled rights to release updated source codes (aka this repository) under an open-source license, since the source codes in this repository do not resemble the original ones in many aspects and I'm not profitting from this project in any form.
+Copyrights of English edition of MOAAP book including the original source codes belong to Packt Publishing. Copyrights of the Chinese edition belong to Publishing House of Electronics Industry. As translator for the Chinese edition, under the contract with Publishin House of Electronics Industry, I do not own the copyrights of any material in the Chinese edition. I do believe, however, I'm entitled rights to release updated source codes (aka this repository) under an open-source license, since the source codes in this repository do not resemble the original ones in many aspects and I'm not profitting from this project in any form.

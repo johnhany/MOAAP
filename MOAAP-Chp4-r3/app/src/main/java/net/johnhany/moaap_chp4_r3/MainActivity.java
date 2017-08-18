@@ -182,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         if (mIsFrontCamera)
         {
             Core.flip(mRgba, mRgba, 1);
+            Core.flip(mGray, mGray, 1);
         }
 
         //Detecting face in the frame

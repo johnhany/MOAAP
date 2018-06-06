@@ -6,13 +6,13 @@ The book is written by Salil Kapur and Nisarg Thakkar, and translated into Chine
 
 ## Requirements
 
-* JDK 8u141
-* Android Studio 2.3.3
-* Android 7.0 (API 24)
-* Android SDK Tools 26.0.1
-* Android NDK r15b
-* OpenCV Android SDK 3.2.0
-* OpenCV 3.2.0 (including opencv_contrib 3.2.0)
+* JDK 8u171
+* Android Studio 3.1.2
+* Android 8.0 (API 26)
+* Gradle 4.4
+* Android Plugin 3.1.2
+* Android NDK r17
+* OpenCV Android SDK 3.2.0 (including opencv_contrib 3.2.0)
 
 All tests are passed on Windows 10 and Ubuntu 16.04.
 

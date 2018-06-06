@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 File imagesFolder = new File(FILE_LOCATION);
                 //imagesFolder.mkdirs();
-                File image = new File(imagesFolder, "panorama_"+ (listImage.size()+1) + ".jpg");
+                File image = new File(imagesFolder, "boat"+ (listImage.size()+1) + ".jpg");
                 fileUri = Uri.fromFile(image);
                 Log.d("MainActivity", "File URI = " + fileUri.toString());
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name

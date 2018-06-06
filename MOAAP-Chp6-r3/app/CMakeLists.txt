@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.4.1)
 
 set(CMAKE_VERBOSE_MAKEFILE on)
-set(ocvlibs "E:/dev-lib/opencv-contrib-android-sdk/sdk/native/libs")
+set(ocvlibs "/home/john/Android/opencv-contrib-android-sdk/sdk/native/libs")
 
-include_directories(E:/dev-lib/opencv-contrib-android-sdk/sdk/native/jni/include)
+include_directories(/home/john/Android/opencv-contrib-android-sdk/sdk/native/jni/include)
 
 add_library(libopencv_java3 SHARED IMPORTED )
 set_target_properties(libopencv_java3 PROPERTIES

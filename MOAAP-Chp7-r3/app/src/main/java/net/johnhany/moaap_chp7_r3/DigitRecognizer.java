@@ -134,7 +134,7 @@ public class DigitRecognizer {
         File mnist_svm_file = new File(external_storage, "SVM_MNIST.xml");
         svm = SVM.load(mnist_svm_file.getAbsolutePath());
 
-        Log.d("MNIST SVM:", "var_count: " + svm.getVarCount());
+        //Log.d("MNIST SVM:", "var_count: " + svm.getVarCount());
     }
 
 
